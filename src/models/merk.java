@@ -5,7 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class merk extends BaseModel {
+public class merk {
+    private Connection connection;
 
     public merk() throws SQLException {
         super();

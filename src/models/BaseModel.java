@@ -11,9 +11,9 @@ public abstract class BaseModel {
     public Connection connection;
 
     public BaseModel() throws SQLException {
-        dbUrl = "jdbc:postgresql://localhost/tukutuku";
+        dbUrl = "jdbc:postgresql://localhost/TukuTuku";
         dbUser = "postgres";
-        dbPassword = "ATIKA1012";
+        dbPassword = "Silvi0209";
 
         connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword);
         System.out.println("Koneksi Berhasil");

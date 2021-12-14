@@ -26,14 +26,14 @@ public class penjualan_sepatu extends BaseModel {
 
         return preparedStatement.executeUpdate();
     }
-    //PreparedStatement digunakan untuk manipulasi database yang menggunakan query – query dinamis(memiliki parameter)
+
     public ResultSet getPenjualanSepatu() throws SQLException {
         String query = "SELECT * FROM penjualan_sepatu";
 
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         return preparedStatement.executeQuery();
     }
-    //Object ResultSet digunakan untuk menampung hasil eksekusi dari database
+
     public void deletePenjualanSepatu(int id_penjualan_sepatu) throws SQLException {
         String query = "delete from penjualan_sepatu where id_penjualan_sepatu = ? ";
 

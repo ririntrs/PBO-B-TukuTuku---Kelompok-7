@@ -5,7 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class jenis extends BaseModel{
+public class jenis {
+    private Connection connection;
 
     public jenis() throws SQLException {
         super();
