@@ -12,7 +12,7 @@ public class tas extends BaseModel{
         super();
     }
     public void addTas(String warna, int stok, int harga, int id_jenis, int id_merk) throws SQLException {
-        String query = "INSERT into sepatu " +
+        String query = "INSERT into tas " +
                 "(ukuran, stok, harga, id_jenis, id_merk) " +
                 "VALUES (?,?,?,?,?)";
 
