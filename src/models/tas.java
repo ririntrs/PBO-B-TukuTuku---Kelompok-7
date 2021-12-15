@@ -25,7 +25,7 @@ public class tas extends BaseModel{
         preparedStatement.executeUpdate();
     }
     public ResultSet getTas() throws SQLException {
-        String query = "SELECT * FROM sepatu";
+        String query = "SELECT * FROM tas";
 
         PreparedStatement preparedStatement = connection.prepareStatement(query);
         return preparedStatement.executeQuery();
